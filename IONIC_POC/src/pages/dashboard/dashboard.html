@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'DASHBOARD' | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="container">
+
+
+  <div *ngFor="let page of pages" class="menu-item bg" (click)="changePage(page)">
+    <ion-icon [name]="page.icon"></ion-icon>
+    <label>{{page.title | translate}}</label>
+  </div>
+
+</ion-content>

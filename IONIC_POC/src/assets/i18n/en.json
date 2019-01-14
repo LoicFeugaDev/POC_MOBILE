@@ -1,0 +1,18 @@
+{
+  "HI":"hi",
+  "DASHBOARD":"Dashboard",
+  "SETTINGS":"Settings",
+  "CHOOSE_LANGUAGE":"Choose your language",
+  "FR":"French",
+  "EN":"English",
+  "FORMS":"Form",
+  "PHOTO":"Camera",
+  "MAPS":"Maps",
+  "QRCODE":"QRCode",
+  "CALLAPI":"Call Api",
+  "SIGNATURE":"Signature",
+  "BLUETOOTH":"Bluetooth",
+  "CHOOSE_THEME":"Choose app theme",
+  "WHITE":"White",
+  "BLACK":"Black"
+}

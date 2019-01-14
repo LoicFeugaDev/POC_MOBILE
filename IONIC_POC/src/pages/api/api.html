@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Api</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-item>
+    <ion-label color="primary">Ville</ion-label>
+    <ion-input placeholder="Ville" [(ngModel)]="city"></ion-input>
+  </ion-item>
+
+  <div style="display: flex;justify-content: center;">
+    <button ion-button class="btn-valid" (click)="getWeather()">Valider</button>
+  </div>
+
+  <div *ngIf="this.weather" style="display: flex;justify-content: center;flex-direction: column; align-items: center;margin-top: 40px;">
+    <card-weather [weather]="weather"></card-weather>
+  </div>
+
+</ion-content>

@@ -1,0 +1,32 @@
+.theme-black{
+  .bg{
+    background: #000;
+    color:white;
+  }
+
+  ion-menu{
+    background: black;
+  }
+  .menu-item {
+    border:1px solid white;
+  }
+
+  .toolbar-background-md{
+    background: black;
+    color:white;
+  }
+  .toolbar-title-md{
+    color:white;
+  }
+  .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color:white;
+  }
+
+  .scroll-content{
+    background: black;
+  }
+  .item-md{
+    background:black;
+    color:white;
+  }
+}

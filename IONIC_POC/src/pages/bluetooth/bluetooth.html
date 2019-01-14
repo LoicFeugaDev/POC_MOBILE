@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bluetooth</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div>{{info}}</div>
+  <div>{{info2}}</div>
+
+  <ion-item>
+    <ion-label>Activer le bluetooth</ion-label>
+    <ion-toggle [(ngModel)]="activeBluetooth" (ionChange)="activateBluetooth()"></ion-toggle>
+  </ion-item>
+
+  <div style="display: flex;justify-content: center; margin-top: 40px">
+    <button ion-button (click)="bleScan()">Chercher des objets</button>
+  </div>
+
+  <div *ngIf="isScanning" style="display: flex;justify-content: center; margin-top: 50px">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div *ngIf="isDeviceFound" style="display: flex;justify-content: center; margin-top: 50px">
+    <ion-item>
+      <ion-label>Liste des objets trouvés</ion-label>
+      <ion-select [(ngModel)]="bleDeviceSelected" (ionChange)="deviceSelected()">
+        <ion-option *ngFor="let bleDevice of bleDevices"  [value]="bleDevice.address">{{bleDevice.name}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+</ion-content>

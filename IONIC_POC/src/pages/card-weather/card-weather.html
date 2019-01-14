@@ -1,0 +1,30 @@
+<div class="ccontainer">
+  <div class="container-top">
+
+    <div class="top">
+
+      <div class="temperature">{{weather.temperature}}°</div>
+      <img [src]="weather.urlWeatherIcon" style="height:100%" alt="">
+    </div>
+    <div style="color:white;font-weight: 100">
+      <div>{{weather.city}}</div>
+      <div>Latitude : {{weather.latitude}}, Longitude : {{weather.longitude}}</div>
+      <div>{{weather.sky}}</div>
+    </div>
+
+  </div>
+  <div class="container-bot">
+    <div class="item-bot">
+
+      <img src="assets/icon/wind.png" style="height:30px" alt="">
+      <div class="wind-label">{{weather.windSpeed}} <div style="font-size: 20px; margin-left: 5px;">m/s</div></div>
+    </div>
+
+    <div class="item-bot">
+
+      <img src="assets/icon/humidity.png" style="height:30px" alt="">
+      <p class="wind-label">{{weather.humidity}} %  </p>
+    </div>
+
+  </div>
+</div>

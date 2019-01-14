@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Carto</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div #map_canvas id="map_canvas" style="height:80%">
+
+  </div>
+  <div>
+    <div>lat : {{lat}} long : {{lon}}</div>
+    <div *ngIf="address">address: {{address.num}} {{address.rue}} {{address.cp}} {{address.ville}} {{address.region}} {{address.pays}}</div>
+  </div>
+  <button ion-button (click)="locateMe()">Me Géolocaliser</button>
+</ion-content>

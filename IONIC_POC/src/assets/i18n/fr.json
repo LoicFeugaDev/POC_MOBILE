@@ -1,0 +1,18 @@
+{
+  "HI":"salut",
+  "DASHBOARD":"Accueil",
+  "SETTINGS":"Paramètre",
+  "CHOOSE_LANGUAGE":"Choisissez votre langue",
+  "FR":"Français",
+  "EN":"Anglais",
+  "FORMS":"Formulaire",
+  "PHOTO":"Photo",
+  "MAPS":"Maps",
+  "QRCODE":"QRCode",
+  "CALLAPI":"Appel Api",
+  "SIGNATURE":"Signature",
+  "BLUETOOTH":"Bluetooth",
+  "CHOOSE_THEME":"Choisissez le theme de l'application",
+  "BLACK":"Noir",
+  "WHITE":"Blanc"
+}

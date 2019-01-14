@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Photo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button class="btn-valid" (click)="openCamera()">Camera</button>
+
+
+  <img  *ngIf="imageSrc" [src]="imageSrc" alt="Select Image"/>
+</ion-content>
